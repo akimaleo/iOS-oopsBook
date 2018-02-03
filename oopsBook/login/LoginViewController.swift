@@ -10,15 +10,18 @@ import UIKit
 import GoogleSignIn
 
 class ViewController: UIViewController, GIDSignInUIDelegate {
-
-    @IBOutlet weak var oauthGoogle: UIButton!
     
+    @IBOutlet weak var oauthGoogleButton: GIDSignInButton!
+    
+    @IBAction func onOauthGoogle(_ sender: Any) {
+        oauthGoogleButton.sendActions(for: .touchUpInside)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-         GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().uiDelegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -27,7 +30,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     // Stop the UIActivityIndicatorView animation that was started when the user
     // pressed the Sign In button
     func signInWillDispatch(signIn: GIDSignIn!, error: NSError!) {
-//        myActivityIndicator.stopAnimating()
+        //        myActivityIndicator.stopAnimating()
     }
     
     // Present a view that prompts the user to sign in with Google
