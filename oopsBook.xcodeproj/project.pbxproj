@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2DE4D72A2602A9FE1322AC6E /* Pods_oopsBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90402B7825EE95977FB4EC3C /* Pods_oopsBook.framework */; };
-		52410F612027859900E5F5D8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52410F5F2027859900E5F5D8 /* Model.xcdatamodeld */; };
+		52410F612027859900E5F5D8 /* oopsBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52410F5F2027859900E5F5D8 /* oopsBook.xcdatamodeld */; };
 		5285BE5920265C7000D07301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5285BE5820265C7000D07301 /* Main.storyboard */; };
 		5285BE5B20265C9900D07301 /* PersonalPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285BE5A20265C9900D07301 /* PersonalPageViewController.swift */; };
 		52A6A5A320260EDA00818DC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6A5A220260EDA00818DC7 /* AppDelegate.swift */; };
@@ -60,7 +60,7 @@
 		52410F5E2027858B00E5F5D8 /* db */ = {
 			isa = PBXGroup;
 			children = (
-				52410F5F2027859900E5F5D8 /* Model.xcdatamodeld */,
+				52410F5F2027859900E5F5D8 /* oopsBook.xcdatamodeld */,
 			);
 			path = db;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 				5285BE5B20265C9900D07301 /* PersonalPageViewController.swift in Sources */,
 				52A6A5A520260EDA00818DC7 /* LoginViewController.swift in Sources */,
 				52A6A5A320260EDA00818DC7 /* AppDelegate.swift in Sources */,
-				52410F612027859900E5F5D8 /* Model.xcdatamodeld in Sources */,
+				52410F612027859900E5F5D8 /* oopsBook.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,13 +470,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		52410F5F2027859900E5F5D8 /* Model.xcdatamodeld */ = {
+		52410F5F2027859900E5F5D8 /* oopsBook.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				52410F602027859900E5F5D8 /* Model.xcdatamodel */,
 			);
 			currentVersion = 52410F602027859900E5F5D8 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			path = oopsBook.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
