@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2DE4D72A2602A9FE1322AC6E /* Pods_oopsBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90402B7825EE95977FB4EC3C /* Pods_oopsBook.framework */; };
+		52410F612027859900E5F5D8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52410F5F2027859900E5F5D8 /* Model.xcdatamodeld */; };
 		5285BE5920265C7000D07301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5285BE5820265C7000D07301 /* Main.storyboard */; };
 		5285BE5B20265C9900D07301 /* PersonalPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285BE5A20265C9900D07301 /* PersonalPageViewController.swift */; };
 		52A6A5A320260EDA00818DC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6A5A220260EDA00818DC7 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		23B60BCC072DF693ABCB1EFD /* Pods-oopsBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oopsBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-oopsBook/Pods-oopsBook.debug.xcconfig"; sourceTree = "<group>"; };
+		52410F602027859900E5F5D8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		5285BE5820265C7000D07301 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5285BE5A20265C9900D07301 /* PersonalPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPageViewController.swift; sourceTree = "<group>"; };
 		52A6A59F20260EDA00818DC7 /* oopsBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oopsBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +55,14 @@
 				D99CD3569C1FA40146AE532E /* Pods-oopsBook.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		52410F5E2027858B00E5F5D8 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				52410F5F2027859900E5F5D8 /* Model.xcdatamodeld */,
+			);
+			path = db;
 			sourceTree = "<group>";
 		};
 		5285BE5620265C3800D07301 /* main */ = {
@@ -94,6 +104,7 @@
 		52A6A5A120260EDA00818DC7 /* oopsBook */ = {
 			isa = PBXGroup;
 			children = (
+				52410F5E2027858B00E5F5D8 /* db */,
 				5285BE5720265C4700D07301 /* view */,
 				52A6A5B7202616A800818DC7 /* resources */,
 				52A6A5A220260EDA00818DC7 /* AppDelegate.swift */,
@@ -270,6 +281,7 @@
 				5285BE5B20265C9900D07301 /* PersonalPageViewController.swift in Sources */,
 				52A6A5A520260EDA00818DC7 /* LoginViewController.swift in Sources */,
 				52A6A5A320260EDA00818DC7 /* AppDelegate.swift in Sources */,
+				52410F612027859900E5F5D8 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +468,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52410F5F2027859900E5F5D8 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52410F602027859900E5F5D8 /* Model.xcdatamodel */,
+			);
+			currentVersion = 52410F602027859900E5F5D8 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 52A6A59720260EDA00818DC7 /* Project object */;
 }
