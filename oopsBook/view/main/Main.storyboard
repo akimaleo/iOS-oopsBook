@@ -42,21 +42,52 @@
             </objects>
             <point key="canvasLocation" x="508" y="-200"/>
         </scene>
-        <!--View Controller-->
+        <!--Personal Page View Controller-->
         <scene sceneID="Add-kJ-ocs">
             <objects>
-                <viewController id="ahn-tf-bMD" sceneMemberID="viewController">
+                <viewController id="ahn-tf-bMD" customClass="PersonalPageViewController" customModule="oopsBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ugS-XO-N8x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aEV-Q3-6mT">
+                                <rect key="frame" x="87" y="61" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="YSJ-aE-lvn"/>
+                                    <constraint firstAttribute="height" constant="200" id="cTO-9A-e6h"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znf-nY-PRg">
+                                <rect key="frame" x="40" y="389" width="295" height="40"/>
+                                <color key="backgroundColor" red="0.30196078431372547" green="0.35686274509803922" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Lg9-6u-Boh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOut:" destination="ahn-tf-bMD" eventType="touchUpInside" id="pnf-bo-y0Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aEV-Q3-6mT" firstAttribute="leading" secondItem="W4j-tG-KGu" secondAttribute="leading" constant="87" id="BRk-Xm-N7v"/>
+                            <constraint firstItem="Znf-nY-PRg" firstAttribute="top" secondItem="aEV-Q3-6mT" secondAttribute="bottom" constant="128" id="Gj2-Lg-Qtg"/>
+                            <constraint firstItem="W4j-tG-KGu" firstAttribute="trailing" secondItem="Znf-nY-PRg" secondAttribute="trailing" constant="40" id="K9B-C1-lv1"/>
+                            <constraint firstItem="W4j-tG-KGu" firstAttribute="trailing" secondItem="aEV-Q3-6mT" secondAttribute="trailing" constant="88" id="OJv-WT-D4p"/>
+                            <constraint firstItem="Znf-nY-PRg" firstAttribute="leading" secondItem="W4j-tG-KGu" secondAttribute="leading" constant="40" id="TU2-09-cF4"/>
+                            <constraint firstItem="aEV-Q3-6mT" firstAttribute="top" secondItem="W4j-tG-KGu" secondAttribute="top" constant="41" id="lyk-qP-CFV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="W4j-tG-KGu"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="eMI-ao-na9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rbb-FR-mD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1169" y="133"/>
+            <point key="canvasLocation" x="1168.8" y="132.68365817091455"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6Oi-Gi-pjX">

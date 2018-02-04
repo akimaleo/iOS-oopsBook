@@ -9,7 +9,7 @@
 import UIKit
 import GoogleSignIn
 
-class ViewController: UIViewController, GIDSignInUIDelegate {
+class LoginViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBOutlet weak var oauthGoogleButton: GIDSignInButton!
     
@@ -29,10 +29,8 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     }
     private func launchMainActivity(){
         var mainView: UIStoryboard!
-        mainView = UIStoryboard(name: "MainStoryboard", bundle: nil)
-        print("tut")
+        mainView = UIStoryboard(name: "Main", bundle: nil)
         if let viewcontroller = mainView.instantiateViewController(withIdentifier: "main") as? UITabBarController {
-            print("in if let")
             self.present(viewcontroller, animated: true, completion: nil)
         }
     }

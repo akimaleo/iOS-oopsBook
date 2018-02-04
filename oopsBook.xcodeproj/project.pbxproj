@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2DE4D72A2602A9FE1322AC6E /* Pods_oopsBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90402B7825EE95977FB4EC3C /* Pods_oopsBook.framework */; };
-		5285BE5920265C7000D07301 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5285BE5820265C7000D07301 /* MainStoryboard.storyboard */; };
-		5285BE5B20265C9900D07301 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285BE5A20265C9900D07301 /* MainViewController.swift */; };
+		5285BE5920265C7000D07301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5285BE5820265C7000D07301 /* Main.storyboard */; };
+		5285BE5B20265C9900D07301 /* PersonalPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285BE5A20265C9900D07301 /* PersonalPageViewController.swift */; };
 		52A6A5A320260EDA00818DC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6A5A220260EDA00818DC7 /* AppDelegate.swift */; };
 		52A6A5A520260EDA00818DC7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6A5A420260EDA00818DC7 /* LoginViewController.swift */; };
 		52A6A5A820260EDA00818DC7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A6A5A620260EDA00818DC7 /* Login.storyboard */; };
@@ -20,8 +20,8 @@
 
 /* Begin PBXFileReference section */
 		23B60BCC072DF693ABCB1EFD /* Pods-oopsBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oopsBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-oopsBook/Pods-oopsBook.debug.xcconfig"; sourceTree = "<group>"; };
-		5285BE5820265C7000D07301 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		5285BE5A20265C9900D07301 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5285BE5820265C7000D07301 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5285BE5A20265C9900D07301 /* PersonalPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPageViewController.swift; sourceTree = "<group>"; };
 		52A6A59F20260EDA00818DC7 /* oopsBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oopsBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A6A5A220260EDA00818DC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A6A5A420260EDA00818DC7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -58,8 +58,8 @@
 		5285BE5620265C3800D07301 /* main */ = {
 			isa = PBXGroup;
 			children = (
-				5285BE5820265C7000D07301 /* MainStoryboard.storyboard */,
-				5285BE5A20265C9900D07301 /* MainViewController.swift */,
+				5285BE5820265C7000D07301 /* Main.storyboard */,
+				5285BE5A20265C9900D07301 /* PersonalPageViewController.swift */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52A6A5AD20260EDA00818DC7 /* LaunchScreen.storyboard in Resources */,
-				5285BE5920265C7000D07301 /* MainStoryboard.storyboard in Resources */,
+				5285BE5920265C7000D07301 /* Main.storyboard in Resources */,
 				52A6A5B62026169C00818DC7 /* book_place_img.png in Resources */,
 				52A6A5AA20260EDA00818DC7 /* Assets.xcassets in Resources */,
 				52A6A5A820260EDA00818DC7 /* Login.storyboard in Resources */,
@@ -267,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5285BE5B20265C9900D07301 /* MainViewController.swift in Sources */,
+				5285BE5B20265C9900D07301 /* PersonalPageViewController.swift in Sources */,
 				52A6A5A520260EDA00818DC7 /* LoginViewController.swift in Sources */,
 				52A6A5A320260EDA00818DC7 /* AppDelegate.swift in Sources */,
 			);
