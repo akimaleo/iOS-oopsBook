@@ -71,19 +71,35 @@
                                     <action selector="logOut:" destination="ahn-tf-bMD" eventType="touchUpInside" id="pnf-bo-y0Q"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Name Surname" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3kY-tT-xjp">
+                                <rect key="frame" x="40" y="296" width="295" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ffU-P5-QZ6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aEV-Q3-6mT" firstAttribute="leading" secondItem="W4j-tG-KGu" secondAttribute="leading" constant="87" id="BRk-Xm-N7v"/>
                             <constraint firstItem="Znf-nY-PRg" firstAttribute="top" secondItem="aEV-Q3-6mT" secondAttribute="bottom" constant="128" id="Gj2-Lg-Qtg"/>
+                            <constraint firstItem="3kY-tT-xjp" firstAttribute="top" secondItem="aEV-Q3-6mT" secondAttribute="bottom" constant="35" id="JOO-QG-uSr"/>
                             <constraint firstItem="W4j-tG-KGu" firstAttribute="trailing" secondItem="Znf-nY-PRg" secondAttribute="trailing" constant="40" id="K9B-C1-lv1"/>
                             <constraint firstItem="W4j-tG-KGu" firstAttribute="trailing" secondItem="aEV-Q3-6mT" secondAttribute="trailing" constant="88" id="OJv-WT-D4p"/>
+                            <constraint firstItem="3kY-tT-xjp" firstAttribute="leading" secondItem="W4j-tG-KGu" secondAttribute="leading" constant="40" id="QdA-au-nlk"/>
                             <constraint firstItem="Znf-nY-PRg" firstAttribute="leading" secondItem="W4j-tG-KGu" secondAttribute="leading" constant="40" id="TU2-09-cF4"/>
                             <constraint firstItem="aEV-Q3-6mT" firstAttribute="top" secondItem="W4j-tG-KGu" secondAttribute="top" constant="41" id="lyk-qP-CFV"/>
+                            <constraint firstItem="Znf-nY-PRg" firstAttribute="top" secondItem="3kY-tT-xjp" secondAttribute="bottom" constant="53" id="p4g-Dh-IMR"/>
+                            <constraint firstItem="W4j-tG-KGu" firstAttribute="trailing" secondItem="3kY-tT-xjp" secondAttribute="trailing" constant="40" id="zIw-p0-Yvo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="W4j-tG-KGu"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="eMI-ao-na9"/>
+                    <connections>
+                        <outlet property="imageView" destination="aEV-Q3-6mT" id="XXu-bK-iTj"/>
+                        <outlet property="textView" destination="3kY-tT-xjp" id="yfr-aZ-ift"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rbb-FR-mD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

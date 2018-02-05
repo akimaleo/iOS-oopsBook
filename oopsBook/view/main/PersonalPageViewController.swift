@@ -11,9 +11,12 @@ import GoogleSignIn
 
 class PersonalPageViewController: UIViewController {
     
+    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        textView.text = CoreDataManager.instance.getUser().0
         // Do any additional setup after loading the view.
     }
   
